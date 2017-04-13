@@ -1,0 +1,23 @@
+alias setbash='vim ~/.common_shell_config'
+
+# Alias
+alias ls='ls -Gp'
+alias la='ls -Gp -a'
+alias ll='ls -G -l -a'
+alias zhao='echo "*************************** Searching Now~ eg: zhao Android.mk **********************************"  ;find . -name'
+      #example: zhao Android.mk
+alias dig='echo "*************************** Digging Now~ eg: dig 'Android' . **********************************"  ;grep -nr --color -B 3 -A 3'
+      #-n: show numnber, -r: search subdir, --color: highlight, -B: number of line before, -A: number of line after
+      #example: dig 'Android' .
+
+# Sublime Text 2
+alias subl="/Applications/'Sublime Text.app'/Contents/SharedSupport/bin/subl"
+
+# Atom
+alias atom="/Applications/Atom.app/Contents/Resources/app/atom.sh"
+
+# Node.js
+export PATH=/usr/local/bin/npm:$PATH
+
+# NPM modules binary
+export PATH="./node_modules/.bin:$PATH"
