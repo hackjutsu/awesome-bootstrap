@@ -1,0 +1,13 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.colorTheme": "cosmo",
+    "zenMode.hideStatusBar": false,
+    "workbench.statusBar.visible": true,
+    "vim.easymotionChangeBackgroundColor": true,
+    "workbench.experimental.colorCustomizations": {
+        "statusBarBackground" : "#1A1A1A",
+        "statusBarNoFolderBackground" : "#0A0A0D",
+        "statusBaiiirDebuggingBackground": "#511f1f"
+    } 
+}
