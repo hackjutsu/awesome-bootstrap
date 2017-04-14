@@ -1,14 +1,21 @@
 alias setbash='vim ~/.common_shell_config'
 
-# Alias
+# List
 alias ls='ls -Gp'
 alias la='ls -Gp -a'
 alias ll='ls -G -l -a'
+
+# Find Files/Grep strings
 alias zhao='echo "*************************** Searching Now~ eg: zhao Android.mk **********************************"  ;find . -name'
       #example: zhao Android.mk
 alias dig='echo "*************************** Digging Now~ eg: dig 'Android' . **********************************"  ;grep -nr --color -B 3 -A 3'
       #-n: show numnber, -r: search subdir, --color: highlight, -B: number of line before, -A: number of line after
       #example: dig 'Android' .
+
+# Find ports
+alias findport='netstat -an | grep -a3 -b3 '
+alias findport2='lsof -i -n -P | grep -a3 -b3 '
+alias listport='netstat -an | less '
 
 # Sublime Text 2
 alias subl="/Applications/'Sublime Text.app'/Contents/SharedSupport/bin/subl"
