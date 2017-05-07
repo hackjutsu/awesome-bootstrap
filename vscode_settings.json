@@ -4,10 +4,9 @@
     "workbench.colorTheme": "cosmo",
     "zenMode.hideStatusBar": false,
     "workbench.statusBar.visible": true,
-    "vim.easymotionChangeBackgroundColor": true,
-    "workbench.experimental.colorCustomizations": {
-        "statusBarBackground" : "#1A1A1A",
-        "statusBarNoFolderBackground" : "#0A0A0D",
-        "statusBaiiirDebuggingBackground": "#511f1f"
+    "workbench.colorCustomizations": {
+        "contrastActiveBorder": "#C09553",
+        "contrastBorder": "#C09553",
+        "statusBar.background" : "#1A1A1A"
     } 
 }
