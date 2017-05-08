@@ -1,4 +1,3 @@
-// vim: syntax=plaintext
 // Place your settings in this file to overwrite the default settings
 {
     "workbench.iconTheme": "vscode-icons",
@@ -11,24 +10,24 @@
         "statusBar.background" : "#1A1A1A"
     },
     "todohighlight.keywords": [
-        "BUG:", // adding custom keywords without specifying the look, default color will be applied
-        "REVIEW:", //another custom keyword
+        "BUG:", 
+        "REVIEW:", 
         {  
-            "text": "NOTE:", // custom text to be highlighted
-            "color": "#ff0000", // the text color, any css color identifier is valid
-            "backgroundColor": "yellow", // the text background color
-            "overviewRulerColor": "grey" //the color of the ruler mark on the scroll bar. use rgba() and define transparent colors to play well with other decorations.
+            "text": "NOTE:", 
+            "color": "#ff0000", 
+            "backgroundColor": "yellow", 
+            "overviewRulerColor": "grey" 
         },
         {
             "text": "HACK:",
             "color": "#000"
         },
-        { // my personal log prefix 
+        { 
             "text": "COSMO:",
             "color": "white",
             "backgroundColor": "#93a661"
         },
-        { //this block will override the built-in keyword `TODO:` and give it new style
+        { 
             "text": "TODO:",
             "color": "white",
             "backgroundColor": "#f58b4c"  
