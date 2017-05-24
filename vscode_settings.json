@@ -32,5 +32,7 @@
             "color": "white",
             "backgroundColor": "#f58b4c"  
         }
-    ]
+    ],
+    "editor.renderWhitespace": "all",
+    "files.trimTrailingWhitespace": true
 }
