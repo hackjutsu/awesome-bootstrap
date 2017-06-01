@@ -22,7 +22,7 @@ esac
 if [ $os == "OSX" ]; then
     which -s brew > /dev/null
     if [ $? == 0 ]; then
-        echo "Homebrew Exists"
+        echo $MARKER "Homebrew Exists"
     else
         echo $MARKER "Installing Homebrew..."
         /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)";
@@ -30,7 +30,7 @@ if [ $os == "OSX" ]; then
 
     which -s curl > /dev/null
     if [ $? == 0 ]; then
-        echo "curl Exists"
+        echo $MARKER "curl Exists"
     else
         echo $MARKER "Installing curl..."
         brew install curl
@@ -38,7 +38,7 @@ if [ $os == "OSX" ]; then
 
     which -s vim > /dev/null
     if [ $? == 0 ]; then
-        echo "vim Exists"
+        echo $MARKER "vim Exists"
     else
     echo $MARKER "Installing vim..."
         brew install vim
@@ -52,7 +52,8 @@ else
 fi
 
 # Create ~/.vim if not exist
-if [ ! -d "~/.vim" ]; then
+if [ ! -d "$HOME/.vim" ]; then
+    echo $MARKER "Creating the .vim directory..."
     mkdir ~/.vim
 fi
 
@@ -61,7 +62,7 @@ echo $MARKER "Downloading the color scheme..."
 curl -fLo ~/.vim/colors/hybrid.vim --create-dirs $colorSchemeFileHybrid
 
 # Sync .vimrc
-if [ -f "~/.vimrc" ]; then
+if [ -f "$HOME/.vimrc" ]; then
     mv ~/.vimrc ~/.vimrc-backup
 fi
 echo $MARKER "Downloading .vimrc file..."
