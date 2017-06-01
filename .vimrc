@@ -52,6 +52,7 @@ let g:ctrlp_by_filename = 1                                  " file search by de
 " ----- NERDTree -----
 nnoremap <C-e> :NERDTreeToggle<CR>
 
+
 " ----- Airline -----
 let g:airline#extensions#tabline#enabled = 0    " disable smart tabline
 let g:airline_theme='molokai'                   " airline theme
