@@ -57,3 +57,11 @@ nnoremap <C-e> :NERDTreeToggle<CR>
 let g:airline#extensions#tabline#enabled = 0    " disable smart tabline
 let g:airline_theme='molokai'                   " airline theme
 set laststatus=2                                " enable airline
+
+
+" ----- Self-defined functions -----
+fun! TrimSpace()
+    let l:save = winsaveview()
+    %s/\s\+$//e
+    call winrestview(l:save)
+endfun
