@@ -8,8 +8,9 @@ call plug#begin('~/.vim/plugged')
 Plug 'leafgarland/typescript-vim'    " typescript syntax highlight
 Plug 'kien/ctrlp.vim'                " Fuzzy file, buffer, mru, tag, etc finder
 Plug 'rking/ag.vim'                  " Vim plugin for the_silver_searcher
+Plug 'mhinz/vim-signify'             " Signify uses the sign column to indicate C/U/D lines in a version-controlled file
+Plug 'w0ng/vim-hybrid'               " Hybrid theme
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-Plug 'mhinz/vim-signify'
 
 call plug#end()
 " ----- plug-vim end -----
@@ -29,7 +30,6 @@ filetype indent on      " load filetype-specific indent files
 
 " ----- Searching -----
 set hlsearch            " highlight matches
-" nnoremap <F5><Space> :nohlsearch<CR> " turn off search highlight
 
 
 " ----- Color Scheme -----
