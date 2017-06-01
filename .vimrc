@@ -6,11 +6,11 @@ autocmd BufWritePost $MYVIMRC source $MYVIMRC
 call plug#begin('~/.vim/plugged')
 
 Plug 'leafgarland/typescript-vim'     " typescript syntax highlight
-Plug 'kien/ctrlp.vim'                 " Fuzzy file, buffer, mru, tag, etc finder
-Plug 'rking/ag.vim'                   " Vim plugin for the_silver_searcher
-Plug 'mhinz/vim-signify'              " Signify uses the sign column to indicate C/U/D lines in a version-controlled file
-Plug 'vim-airline/vim-airline'        " Lean status bar
-Plug 'vim-airline/vim-airline-themes' " Lean status bar themes
+Plug 'kien/ctrlp.vim'                 " fuzzy file, buffer, mru, tag, etc finder
+Plug 'rking/ag.vim'                   " vim plugin for the_silver_searcher
+Plug 'mhinz/vim-signify'              " signify uses the sign column to indicate C/U/D lines in a version-controlled file
+Plug 'vim-airline/vim-airline'        " lean status bar
+Plug 'vim-airline/vim-airline-themes' " lean status bar themes
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 
 call plug#end()
@@ -38,19 +38,22 @@ colorscheme hybrid      " awesome colorscheme
 syntax enable           " enable syntax processing
 
 
-" ----- Tab & Space -----
+" ----- Tab & Space & Shift-----
 set tabstop=4           " number of visual spaces per TAB
 set softtabstop=4       " number of spaces in tab when editing
 set expandtab           " tabs are spaces
+set shiftwidth=4        " number of spaces for block shifting
 
 
 " ----- CtrlP -----
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'    " excluded paths
 let g:ctrlp_by_filename = 1                                  " file search by default
+let g:ctrlp_show_hidden = 1                                  " show hidden files by default
 
 
 " ----- NERDTree -----
-nnoremap <C-e> :NERDTreeToggle<CR>
+nnoremap <C-e> :NERDTreeToggle<CR>                           " Ctrl + E to toggle NerdTree
+let NERDTreeShowHidden=1                                     " show hidden files by default
 
 
 " ----- Airline -----
