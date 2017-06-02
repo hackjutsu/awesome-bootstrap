@@ -54,6 +54,7 @@ let g:ctrlp_show_hidden = 1                                  " show hidden files
 " ----- NERDTree -----
 nnoremap <C-e> :NERDTreeToggle<CR>                           " Ctrl + E to toggle NerdTree
 let NERDTreeShowHidden=1                                     " show hidden files by default
+let g:NERDTreeWinSize=50                                     " set the width for the navigation panel
 
 
 " ----- Airline -----
@@ -64,8 +65,16 @@ set ttimeoutlen=10                              " set timeout when leaving the i
 
 
 " ----- Self-defined functions -----
+" :TrimSpace
 fun! TrimSpace()
     let l:save = winsaveview()
     %s/\s\+$//e
     call winrestview(l:save)
 endfun
+command! -nargs=* TrimSpace call TrimSpace()
+
+" Ntws <size>
+fun! NerdTreeWinSize( arg )
+    let g:NERDTreeWinSize=a:arg
+endfun
+command! -nargs=* Ntws call NerdTreeWinSize( '<args>' ) | NERDTree
