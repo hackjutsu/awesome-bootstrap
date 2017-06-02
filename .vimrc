@@ -52,9 +52,9 @@ let g:ctrlp_show_hidden = 1                                  " show hidden files
 
 
 " ----- NERDTree -----
-nnoremap <C-e> :NERDTreeToggle<CR>                           " Ctrl + E to toggle NerdTree
-let NERDTreeShowHidden=1                                     " show hidden files by default
-let g:NERDTreeWinSize=50                                     " set the width for the navigation panel
+nnoremap <C-e> :NERDTreeToggle<CR>              " Ctrl + E to toggle NerdTree
+let NERDTreeShowHidden=1                        " show hidden files by default
+let g:NERDTreeWinSize=50                        " set the width for the navigation panel
 
 
 " ----- Airline -----
@@ -62,6 +62,11 @@ let g:airline#extensions#tabline#enabled = 0    " disable smart tabline
 let g:airline_theme='molokai'                   " airline theme
 set laststatus=2                                " enable airline
 set ttimeoutlen=10                              " set timeout when leaving the insert mode
+
+
+" ----- Self-defined Key Re-maping -----
+noremap <c-j> o<esc>                            " Ctrl + J to insert blank line below
+noremap <c-k> O<esc>                            " Ctrl + K to insert blank line above
 
 
 " ----- Self-defined functions -----
