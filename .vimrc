@@ -60,6 +60,7 @@ let NERDTreeShowHidden=1                                     " show hidden files
 let g:airline#extensions#tabline#enabled = 0    " disable smart tabline
 let g:airline_theme='molokai'                   " airline theme
 set laststatus=2                                " enable airline
+set ttimeoutlen=10                              " set timeout when leaving the insert mode
 
 
 " ----- Self-defined functions -----
