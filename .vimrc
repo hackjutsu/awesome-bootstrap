@@ -29,6 +29,10 @@ filetype indent on      " load filetype-specific indent files
 " set ruler               " show line & column of the cursor at status bar
 
 
+" ----- Error Bell -----
+set belloff=all         " turn off the error bell
+
+
 " ----- Searching -----
 set hlsearch            " highlight matches
 
@@ -52,7 +56,7 @@ let g:ctrlp_show_hidden = 1                                  " show hidden files
 
 
 " ----- NERDTree -----
-nnoremap <C-e> :NERDTreeToggle<CR>              " Ctrl + E to toggle NerdTree
+nnoremap <c-e> :NERDTreeToggle<cr>              " Ctrl + E to toggle NerdTree
 let NERDTreeShowHidden=1                        " show hidden files by default
 let g:NERDTreeWinSize=50                        " set the width for the navigation panel
 
@@ -65,8 +69,13 @@ set ttimeoutlen=10                              " set timeout when leaving the i
 
 
 " ----- Self-defined Key Re-maping -----
-noremap <c-j> o<esc>                            " Ctrl + J to insert blank line below
-noremap <c-k> O<esc>                            " Ctrl + K to insert blank line above
+noremap <c-o> o<esc>                            " Ctrl + o to insert blank line below
+noremap <c-i> O<esc>                            " Ctrl + i to insert blank line above
+
+nnoremap <c-j> <c-w>j                           " Ctrl + j to switch the split below
+nnoremap <c-k> <c-w>k                           " Ctrl + k to switch the split above
+nnoremap <c-h> <c-w>h                           " Ctrl + h to switch the split on the left
+nnoremap <c-l> <c-w>l                           " Ctrl + l to switch the split on the right
 
 
 " ----- Self-defined functions -----
