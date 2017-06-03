@@ -28,6 +28,7 @@ set colorcolumn=100     " set a marker for 100th column
 filetype indent on      " load filetype-specific indent files
 " set ruler               " show line & column of the cursor at status bar
 
+
 " ----- Encoding -----
 set encoding=utf-8      " use utf-8 encoding
 
@@ -46,6 +47,7 @@ set hlsearch            " highlight matches
 
 " ----- Color Scheme -----
 colorscheme hybrid      " awesome colorscheme
+set background=dark     " use dark background as default
 syntax enable           " enable syntax processing
 
 
