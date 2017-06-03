@@ -28,6 +28,13 @@ set colorcolumn=100     " set a marker for 100th column
 filetype indent on      " load filetype-specific indent files
 " set ruler               " show line & column of the cursor at status bar
 
+" ----- Encoding -----
+set encoding=utf-8      " use utf-8 encoding
+
+
+" ----- Clipboard -----
+set clipboard=unnamed   " use os clipboard
+
 
 " ----- Error Bell -----
 set belloff=all         " turn off the error bell
