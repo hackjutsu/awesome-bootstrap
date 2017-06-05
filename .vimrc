@@ -98,6 +98,13 @@ nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 
 
+" ----- Highlight TODO/FIXME/HACK/NOTE/WHY keywords -----
+augroup HiglightTODO
+    autocmd!
+    autocmd WinEnter,VimEnter * :silent! call matchadd('Todo', 'TODO\|FIXME\|HACK\|NOTE\|WHY')
+augroup END
+
+
 " ----- Self-defined functions -----
 " :TrimSpace
 fun! TrimSpace()
