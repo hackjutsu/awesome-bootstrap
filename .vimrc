@@ -2,6 +2,10 @@
 autocmd BufWritePost $MYVIMRC source $MYVIMRC
 
 
+" ----- Define <leader> -----
+let mapleader = "-"
+
+
 " ----- plug-vim start -----
 call plug#begin('~/.vim/plugged')
 
@@ -65,7 +69,8 @@ let g:ctrlp_show_hidden = 1                                  " show hidden files
 
 
 " ----- NERDTree -----
-nnoremap <c-e> :NERDTreeToggle<cr>              " Ctrl + E to toggle NerdTree
+" Ctrl + E to toggle NerdTree
+nnoremap <leader>e :NERDTreeToggle<cr>
 let NERDTreeShowHidden=1                        " show hidden files by default
 let g:NERDTreeWinSize=50                        " set the width for the navigation panel
 
@@ -78,13 +83,19 @@ set ttimeoutlen=10                              " set timeout when leaving the i
 
 
 " ----- Self-defined Key Re-maping -----
-noremap <c-o> o<esc>                            " Ctrl + o to insert blank line below
-noremap <c-i> O<esc>                            " Ctrl + i to insert blank line above
+" Ctrl + o to insert blank line below
+noremap <c-o> o<esc>
+" Ctrl + i to insert blank line above
+noremap <c-i> O<esc>
 
-nnoremap <c-j> <c-w>j                           " Ctrl + j to switch the split below
-nnoremap <c-k> <c-w>k                           " Ctrl + k to switch the split above
-nnoremap <c-h> <c-w>h                           " Ctrl + h to switch the split on the left
-nnoremap <c-l> <c-w>l                           " Ctrl + l to switch the split on the right
+" Ctrl + j to switch the split below
+nnoremap <c-j> <c-w>j
+" Ctrl + k to switch the split above
+nnoremap <c-k> <c-w>k
+" Ctrl + h to switch the split on the left
+nnoremap <c-h> <c-w>h
+" Ctrl + l to switch the split on the right
+nnoremap <c-l> <c-w>l
 
 
 " ----- Self-defined functions -----
