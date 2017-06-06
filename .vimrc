@@ -105,6 +105,14 @@ augroup HiglightTODO
 augroup END
 
 
+" ----- Highlight current cursor line -----
+function s:SetCursorLine()
+    set cursorline
+    hi cursorline cterm=none ctermbg=darkblue ctermfg=white
+endfunction
+autocmd VimEnter * call s:SetCursorLine()
+
+
 " ----- Self-defined functions -----
 " :TrimSpace
 fun! TrimSpace()
