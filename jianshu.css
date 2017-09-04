@@ -1,0 +1,90 @@
+@-moz-document domain("www.jianshu.com") {
+p {
+    font-size: 15px;
+    line-height: 1.5;
+    padding-left: 25px;
+}
+
+.note .post .article .show-content ol, .note .post .article .show-content ul {
+    padding-left: 25px !important;
+}
+.note .post .article .show-content blockquote {
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    margin-left: 25px;
+}
+.note .post .article .title {
+    word-break: break-word!important;
+    word-break: break-all;
+    margin: 20px 0px;
+    font-family: -apple-system,SF UI Display,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+.note .post .article .show-content .image-package {
+    padding-bottom: 25px;
+    width: 100%;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: center;
+}
+.note .post .article .show-content blockquote p {
+    font-size: 14px;
+    line-height: 1.7;
+}
+.note .post .article .show-content h2 {
+    font-size: 20px;
+}
+.note .post .article .show-content h3 {
+    font-size: 18px;
+}
+body > div.note-bottom {
+    display: none;
+}
+.note .post .article .show-content h4 {
+    font-size: 16px;
+}
+body > div.note > div.post > div.meta-bottom,
+body > div.note > div.post > div.follow-detail,
+body > div.note > div.post > div.support-author,
+#comment-list,
+body > div.note > div.post > div.article > div.author {
+    display: none;
+    /* visibility: hidden; */
+}
+.note .post .article .show-content ol li ol,
+.note .post .article .show-content ol li ul,
+.note .post .article .show-content ul li ol,
+.note .post .article .show-content ul li ul {
+    margin-top: 5px;
+}
+.note .post .article .show-content ol,
+.note .post .article .show-content ul {
+    padding: 0;
+    margin-left: 22px;
+    margin-bottom: 10px;
+}
+.note .post .article .show-content pre {
+    margin-bottom: 20px;
+    padding: 12px;
+    margin-left: 25px;
+}
+.note .post .article .show-content p {
+    margin: 0 0 15px;
+}
+.note .post .article .show-content ol li,
+.note .post .article .show-content ul li {
+    margin-bottom: 2px;
+    line-height: 20px;
+    font-size: 15px;
+}
+/* list bulletin */
+    
+.hljs,
+pre {
+    background: #ffffff;
+}
+/* background color for code blocks */
+}
