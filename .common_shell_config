@@ -1,4 +1,5 @@
 alias setbash='vim ~/.common_shell_config'
+alias refresh='source ~/.common_shell_config'
 
 # List
 alias ls='ls -Gp'
